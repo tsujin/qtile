@@ -32,6 +32,8 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+from colors import dracula
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -127,7 +129,9 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"],
+    layout.Columns(
+        border_normal=dracula['background'],
+        border_focus=dracula['purple'],
         border_width=4,
         border_on_single=True,
         margin=10,
