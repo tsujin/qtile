@@ -191,7 +191,7 @@ screens = [
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
         background="#000000",
-        wallpaper=logo,
+        wallpaper='~/.local/share/backgrounds/wallpaper.png',
         wallpaper_mode="center",
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
